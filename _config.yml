@@ -1,1 +1,4 @@
+include:
+- assets/product-images
+
 relative_urls: true
