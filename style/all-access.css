@@ -1,0 +1,19 @@
+.page-allaccess-container {
+	display: flex;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+
+.page-allaccess-option {
+	width: 450px;
+	height: 450px;
+	cursor: pointer;
+}
+
+.page-allaccess-option img {
+	height: 100%;
+}

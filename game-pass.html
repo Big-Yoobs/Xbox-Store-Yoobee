@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Game Pass | Xbox</title>
+	<link href="./style/style.css" rel="stylesheet" type="text/css" />
+	<link href="./style/game-pass.css" rel="stylesheet" type="text/css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+	<link rel="manifest" href="./favicons/site.webmanifest">
+	<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#117c0e">
+	<link rel="shortcut icon" href="./favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#117c0e">
+	<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<div class="navbar-container"></div>
+
+	<div class="split-section-container">
+		<div class="split-section-section">
+			<span class="split-section-title">Xbox Game Pass</span>
+			<p>Play new games on day one. Plus, enjoy hundreds of high-quality games with friends on console, PC or cloud. With games added all the time, there’s always something new to play.</p>
+			<a class="shrek-button">Join Now for $1</a>
+		</div>
+		<div class="split-section-section">
+			<div class="slideshow-image-container">
+				<a class="slideshow-image2"></a>
+				<div class="slideshow-image"></div>
+				<div class="slideshow-fade"></div>
+				<div class="slideshow-arrow-previous" onClick="topSlideshow.previousSlide()"></div>
+				<div class="slideshow-arrow-next" onClick="topSlideshow.nextSlide()"></div>
+				<div class="slideshow-info-container">
+					<span class="slideshow-title"></span>
+					<div class="slideshow-thumbnail">
+					</div>
+				</div>
+			</div>
+			<div class="slideshow-buttons-container"></div>
+		</div>
+	</div>
+
+	<div class="spacer"></div>
+
+	<div class="sortnav-container">
+		<div class="sortnav-center">
+			<div>
+				<a onClick="setFilterOption('sort', 'New_And_Trending', true)" class="sort-New_And_Trending">New & Trending</a>
+				<a onClick="setFilterOption('sort', 'Top_Selling', true)" class="sort-Top_Selling">Top Selling</a>
+				<a onClick="setFilterOption('sort', 'Top_Rated', true)" class="sort-Top_Rated">Top Rated</a>
+				<a onClick="setFilterOption('sort', 'Lowest_Price', true)" class="sort-Lowest_Price">Lowest Price</a>
+				<a onClick="setFilterOption('sort', 'Highest_Price', true)" class="sort-Highest_Price">Highest Price</a>
+			</div>
+			<input type="text" class="searchbox" placeholder="Search games" onInput="reloadLibrary()">
+		</div>
+	</div>
+	<div class="library-section">
+		<div class="filters-container"></div>
+		<div class="library-container"></div>
+	</div>
+
+	<div class="split-section-container">
+		<div class="split-section-section">
+			<span class="split-section-title">Play Day One</span>
+			<p>Enjoy incredible new games on day one like Halo Infinite from Xbox Game Studios, as well as iconic franchises from Bethesda Softworks, indie games, blockbusters, and more.</p>
+			<a class="shrek-button">Join Now for $1</a>
+		</div>
+		<div class="split-section-section split-section-image">
+		</div>
+	</div>
+
+	<div class="footer"></div>
+
+
+	<script type="text/javascript" src="./script/library.js"></script>
+	<script type="text/javascript" src="./script/filters.js"></script>
+	<script type="text/javascript" src="./script/utils.js"></script>
+	<script type="text/javascript" src="./script/game-pass.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.split-section-image {
+	background-image: url('../assets/extra-content/accessories-promo.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.page-consoles-container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	max-width: 1300px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.page-consoles-main {
+	height: 450px;
+	max-height: 30vw;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.page-consoles-secondary {
+	height: 330px;
+	max-height: 23vw;
+	cursor: pointer;
+	margin: 10px;
+}

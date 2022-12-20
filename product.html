@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Product | Xbox</title>
+	<link href="./style/style.css" rel="stylesheet" type="text/css" />
+	<link href="./style/product.css" rel="stylesheet" type="text/css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+	<link rel="manifest" href="./favicons/site.webmanifest">
+	<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#117c0e">
+	<link rel="shortcut icon" href="./favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#117c0e">
+	<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<div class="navbar-container"></div>
+
+	<div class="page-product-slideshow">
+		<div class="slideshow-image-container">
+			<video class="slideshow-image2" muted autoplay></video>
+			<video class="slideshow-image" muted autoplay></video>
+		</div>
+		<div class="slideshow-buttons-container"></div>
+		<h1 class="page-product-title"></h1>
+	</div>
+
+	<div class="page-product-button-container">
+		<button class="page-product-button-get">
+			Get
+			<span class="page-product-price">...</span>
+		</button>
+		<button class="page-product-button" style="background-image:url('./assets/icons/product-cart.svg')"></button>
+		<button class="page-product-button" style="background-image:url('./assets/icons/product-wishlist.svg')"></button>
+		<button class="page-product-button" style="background-image:url('./assets/icons/product-qr.svg')"></button>
+		<br>
+		<br>
+		<div class="page-product-platform-selector"></div>
+		<a class="page-product-maturity-rating">
+			<img />
+		</a>
+	</div>
+
+	<div class="sortnav-container">
+		<div class="sortnav-center">
+			<div>
+				<a onClick="scrollToSection('position-overview')" class="scrollto-position-overview">Overview</a>
+				<a onClick="scrollToSection('position-extras')" class="scrollto-position-extras">Extra Content</a>
+				<a onClick="scrollToSection('position-specs')" class="scrollto-position-specs">Specs</a>
+				<a onClick="scrollToSection('position-reviews')" class="scrollto-position-reviews">Reviews</a>
+			</div>
+			<div class="page-product-platform-selector"></div>
+		</div>
+	</div>
+
+	<div class="page-product-body">
+		<div class="page-product-overview" id="position-overview">
+
+		</div>
+		<div class="page-product-sticky">
+			<button class="page-product-sticky-get"></button>
+			<button class="page-product-sticky-button"
+				style="background-image:url('./assets/icons/product-cart.svg')"></button>
+			<button class="page-product-sticky-button"
+				style="background-image:url('./assets/icons/product-wishlist.svg')"></button>
+			<div class="page-product-sticky-tags"></div>
+			<div class="page-product-sticky-info">
+				<span>Developer</span>
+				<b></b>
+			</div>
+			<div class="page-product-sticky-info">
+				<span>Publisher</span>
+				<b></b>
+			</div>
+			<div class="page-product-sticky-info">
+				<span>Release Date</span>
+				<b></b>
+			</div>
+			<div class="page-product-sticky-reviews-container"></div>
+		</div>
+	</div>
+	<div id="position-extras"></div>
+	<div id="addons-container">
+		<h2 class="page-product-extra-title">Add-ons & DLCs</h2>
+		<div class="page-product-extra-container">
+			<div class="page-product-extra-scroll"></div>
+			<div class="slideshow-arrow-previous"
+				onClick="scrollElement(this.parentElement.getElementsByClassName('page-product-extra-scroll')[0], false)"></div>
+			<div class="slideshow-arrow-next"
+				onClick="scrollElement(this.parentElement.getElementsByClassName('page-product-extra-scroll')[0], true)"></div>
+		</div>
+	</div>
+
+	<h2 class="page-product-extra-title">Related Games</h2>
+	<div class="page-product-extra-container">
+		<div class="page-product-extra-scroll"></div>
+		<div class="slideshow-arrow-previous"
+			onClick="scrollElement(this.parentElement.getElementsByClassName('page-product-extra-scroll')[0], false)"></div>
+		<div class="slideshow-arrow-next"
+			onClick="scrollElement(this.parentElement.getElementsByClassName('page-product-extra-scroll')[0], true)"></div>
+	</div>
+
+	<div class="page-product-specs-container" id="position-specs">
+		<div class="page-product-specs-option">
+			<h3>Minimum Requirements</h3>
+			<div>
+				<b>Architecture</b>
+				<span>x64</span>
+			</div>
+			<div>
+				<b>OS</b>
+				<span>Windows 10 64-bit</span>
+			</div>
+			<div>
+				<b>Processor</b>
+				<span>Intel Core i5-2300 or AMD FX-8350</span>
+			</div>
+			<div>
+				<b>Memory</b>
+				<span>4 GB RAM</span>
+			</div>
+			<div>
+				<b>Graphics</b>
+				<span>GeForce GTX 550 Ti or Radeon HD 7770</span>
+			</div>
+		</div>
+		<div class="page-product-specs-option">
+			<h3>Recommended Requirements</h3>
+			<div>
+				<b>Architecture</b>
+				<span>x64</span>
+			</div>
+			<div>
+				<b>OS</b>
+				<span>Windows 10 64-bit</span>
+			</div>
+			<div>
+				<b>Processor</b>
+				<span>Intel Core i5-3470 or AMD Ryzen 3 1200</span>
+			</div>
+			<div>
+				<b>Memory</b>
+				<span>8 GB RAM</span>
+			</div>
+			<div>
+				<b>Graphics</b>
+				<span>GeForce GTX 660 or Radeon R9 270</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-product-reviews-section" id="position-reviews">
+		<div class="page-product-reviews-overview-container">
+			<div class="page-product-reviews-overview">
+				<span class="page-product-reviews-rating"></span>
+				<span class="page-product-reviews-count"></span>
+				<div class="page-product-reviews-rating-section">
+					<span class="page-product-reviews-rating-number">5</span>
+					<img src="./assets/icons/star-full.svg" />
+					<div class="page-product-reviews-rating-bar">
+						<div style="width:26%"></div>
+					</div>
+					<span class="age-product-reviews-rating-percent">26%</span>
+				</div>
+				<div class="page-product-reviews-rating-section">
+					<span class="page-product-reviews-rating-number">4</span>
+					<img src="./assets/icons/star-full.svg" />
+					<div class="page-product-reviews-rating-bar">
+						<div style="width:52%"></div>
+					</div>
+					<span class="age-product-reviews-rating-percent">52%</span>
+				</div>
+				<div class="page-product-reviews-rating-section">
+					<span class="page-product-reviews-rating-number">3</span>
+					<img src="./assets/icons/star-full.svg" />
+					<div class="page-product-reviews-rating-bar">
+						<div style="width:3%"></div>
+					</div>
+					<span class="age-product-reviews-rating-percent">3%</span>
+				</div>
+				<div class="page-product-reviews-rating-section">
+					<span class="page-product-reviews-rating-number">2</span>
+					<img src="./assets/icons/star-full.svg" />
+					<div class="page-product-reviews-rating-bar">
+						<div style="width:7%"></div>
+					</div>
+					<span class="age-product-reviews-rating-percent">7%</span>
+				</div>
+				<div class="page-product-reviews-rating-section">
+					<span class="page-product-reviews-rating-number">1</span>
+					<img src="./assets/icons/star-full.svg" />
+					<div class="page-product-reviews-rating-bar">
+						<div style="width:12%"></div>
+					</div>
+					<span class="age-product-reviews-rating-percent">12%</span>
+				</div>
+				<button>Write Review</button>
+				<button>Filter/Sort</button>
+			</div>
+		</div>
+		<div class="page-product-reviews-list">
+			<div class="page-product-review">
+				<div class="page-product-review-image" style="background-image:url('/assets/reviewer-profiles/1.jpg')"></div>
+				<div class="page-product-review-info">
+					<span class="page-product-review-name">XX_AustrianPainter__XX</span>
+					<span class="page-product-review-date">13/08/2022</span>
+				</div>
+				<br>
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-empty.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-empty.svg" />
+				<span class="page-product-review-title page-product-review-title-xbox">Decent game, needs SBMM</span>
+				<p>im having problems trying to get a game started ive tried every mode it shows the person im suposed to fight
+					but when the timer goes down it just resets back to the main menu so yeah games broken i think</p>
+			</div>
+			<div class="page-product-review">
+				<div class="page-product-review-image" style="background-image:url('/assets/reviewer-profiles/2.jpg')"></div>
+				<div class="page-product-review-info">
+					<span class="page-product-review-name">robertsm0m420</span>
+					<span class="page-product-review-date">27/07/2022</span>
+				</div>
+				<br>
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-empty.svg" />
+				<span class="page-product-review-title page-product-review-title-windows">Better than Brawlhalla</span>
+				<p>Fun so far.</p>
+			</div>
+			<div class="page-product-review">
+				<div class="page-product-review-image" style="background-image:url('/assets/reviewer-profiles/3.jpg')"></div>
+				<div class="page-product-review-info">
+					<span class="page-product-review-name">Yarrrrrrrrrrrrrrrrrrrrrrrr</span>
+					<span class="page-product-review-date">03/07/2022</span>
+				</div>
+				<br>
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-empty.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-empty.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-empty.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-empty.svg" />
+				<span class="page-product-review-title page-product-review-title-windows">doesnt work in any mode</span>
+				<p>im having problems trying to get a game started ive tried every mode it shows the person im suposed to fight
+					but when the timer goes down it just resets back to the main menu so yeah games broken i think</p>
+			</div>
+			<div class="page-product-review">
+				<div class="page-product-review-image" style="background-image:url('/assets/reviewer-profiles/4.jpg')"></div>
+				<div class="page-product-review-info">
+					<span class="page-product-review-name">Mr_Spike</span>
+					<span class="page-product-review-date">06/08/2022</span>
+				</div>
+				<br>
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<span class="page-product-review-title page-product-review-title-xbox">Multiversus is probably one of the games
+					ever made</span>
+			</div>
+			<div class="page-product-review">
+				<div class="page-product-review-image" style="background-image:url('/assets/reviewer-profiles/5.jpg')"></div>
+				<div class="page-product-review-info">
+					<span class="page-product-review-name">graphical</span>
+					<span class="page-product-review-date">17/07/2022</span>
+				</div>
+				<br>
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-full.svg" />
+				<img class="page-product-review-star" src="./assets/icons/star-empty.svg" />
+				<span class="page-product-review-title page-product-review-title-windows">Plz add walter white</span>
+				<p>⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿
+					⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢺⣿
+					⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⠜⣿
+					⣿⣿⣿⣿⠿⠿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿
+					⣿⣿⡏⠁⠀⠀⠀⠀⠀⣀⣠⣤⣤⣶⣶⣶⣶⣶⣦⣤⡄⠀⠀⠀⠀⢀⣴⣿
+					⣿⣿⣷⣄⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⡧⠇⢀⣤⣶
+					⣿⣿⣿⣿⣿⣿⣾⣮⣭⣿⡻⣽⣒⠀⣤⣜⣭⠐⢐⣒⠢⢰
+					⣿⣿⣿⣿⣿⣿⣿⣏⣿⣿⣿⣿⣿⣿⡟⣾⣿⠂⢈⢿⣷⣞
+					⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣷⣶⣾⡿⠿⣿⠗⠈⢻⣿
+					⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠻⠋⠉⠑⠀⠀⢘⢻
+					⣿⣿⣿⣿⣿⣿⣿⡿⠟⢹⣿⣿⡇⢀⣶⣶⠴⠶⠀⠀⢽
+					⣿⣿⣿⣿⣿⣿⡿⠀⠀⢸⣿⣿⠀⠀⠣⠀⠀⠀⠀⠀⡟⢿⣿
+					⣿⣿⣿⡿⠟⠋⠀⠀⠀⠀⠹⣿⣧⣀⠀⠀⠀⠀⡀⣴⠁⢘⡙
+					⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⠗⠂⠄⠀⣴⡟⠀⠀⡃ </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer"></div>
+
+
+	<script type="text/javascript" src="./script/library.js"></script>
+	<script type="text/javascript" src="./script/filters.js"></script>
+	<script type="text/javascript" src="./script/utils.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script type="text/javascript" src="./script/product.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.split-section-image {
+	background-image: url('../assets/extra-content/forza-promo.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.sortnav-center {
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+}
+
+.searchbox {
+	width: calc(100% - 650px);
+	max-width: 400px;
+	height: 35px;
+	margin-top: 4px;
+}

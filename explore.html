@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Explore | Xbox</title>
+	<link href="./style/style.css" rel="stylesheet" type="text/css" />
+	<link href="./style/explore.css" rel="stylesheet" type="text/css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+	<link rel="manifest" href="./favicons/site.webmanifest">
+	<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#117c0e">
+	<link rel="shortcut icon" href="./favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#117c0e">
+	<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<div class="navbar-container"></div>
+	<div class="page-explore-slideshow">
+		<div class="slideshow-image-container">
+			<a class="slideshow-image2"></a>
+			<div class="slideshow-image"></div>
+			<div class="slideshow-arrow-previous" onClick="topSlideshow.previousSlide()"></div>
+			<div class="slideshow-arrow-next" onClick="topSlideshow.nextSlide()"></div>
+			<span class="slideshow-title"></span>
+			<div class="slideshow-tags"></div>
+		</div>
+		<div class="slideshow-buttons-container"></div>
+	</div>
+	<div class="searchgift-container">
+		<input type="text" class="searchbox" placeholder="Search games" onInput="reloadLibrary()">
+		<button>
+			<img src="./assets/icons/gift.svg" />
+			<span>Buy Gift Card</span>
+		</button>
+		<button>
+			<img src="./assets/icons/qr code.svg" />
+			<span>Redeem Code</span>
+		</button>
+	</div>
+	<div class="sortnav-container">
+		<div class="sortnav-center">
+			<a onClick="setFilterOption('sort', 'New_And_Trending', true)" class="sort-New_And_Trending">New & Trending</a>
+			<a onClick="setFilterOption('sort', 'Top_Selling', true)" class="sort-Top_Selling">Top Selling</a>
+			<a onClick="setFilterOption('sort', 'Top_Rated', true)" class="sort-Top_Rated">Top Rated</a>
+			<a onClick="setFilterOption('sort', 'Lowest_Price', true)" class="sort-Lowest_Price">Lowest Price</a>
+			<a onClick="setFilterOption('sort', 'Highest_Price', true)" class="sort-Highest_Price">Highest Price</a>
+		</div>
+	</div>
+	<div class="library-section">
+		<div class="filters-container"></div>
+		<div class="library-container"></div>
+	</div>
+	<div class="footer"></div>
+	<script type="text/javascript" src="./script/library.js"></script>
+	<script type="text/javascript" src="./script/filters.js"></script>
+	<script type="text/javascript" src="./script/utils.js"></script>
+	<script type="text/javascript" src="./script/explore.js"></script>
+</body>
+
+</html>

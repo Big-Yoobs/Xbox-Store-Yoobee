@@ -1,0 +1,8 @@
+.page-explore-slideshow .slideshow-image-container {
+	height: calc(100vh - 200px);
+}
+
+.page-explore-slideshow {
+	margin-left: 5%;
+	margin-right: 5%;
+}
