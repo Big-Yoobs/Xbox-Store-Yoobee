@@ -6,4 +6,4 @@ Developers:
 https://github.com/tomphonse
 https://github.com/eyezahhhh
 
-https://big-yoobs.github.io/Xbox-Store-Yoobee/index.html
+https://yoobee.eyezah.com/
